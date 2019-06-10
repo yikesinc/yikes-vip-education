@@ -1,0 +1,170 @@
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "template/mixins";
+@import "template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600);
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see template/settings.scss)
+$backgroundColor: #111;
+$lwtvPink: #d1548e;
+$white: #fff;
+$quoteColor: #8fadd0;
+$success: #2ecc71;
+
+$mainFont: 'Open Sans', sans-serif;
+$linkColor: #e7ad52;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFontBig: Oswald, sans-serif;
+$headingFont: Montserrat, sans-serif;
+$headingTextShadow:  2px 4px 3px rgba(0,0,0,0.3);
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$heading1Size: 7.6rem;
+$heading2Size: 4rem;
+$heading3Size: 3rem;
+$heading4Size: 2rem;
+$selectionBackgroundColor: #e7ad52;
+
+
+// FontAwesome
+
+.icon::before {
+	display: none;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Change the speed of fragments
+
+.reveal .slides section {
+	.fragment {
+		opacity: 0;
+		visibility: hidden;
+		transition: all .8s ease;
+
+		&.visible {
+			opacity: 1;
+			visibility: inherit;
+		}
+	}
+}
+
+// Helpers
+
+.reveal {
+	.align-left {
+		text-align: left !important;
+	}
+
+	.align-center {
+		text-align: center !important;
+	}
+
+	.mt2 {
+		margin-top: 2rem;
+	}
+
+	.pink {
+		color: $lwtvPink;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "template/theme";
+// ---------------------------------------------
+
+
+// Misc custom styles
+
+.reveal {
+	.bosses {
+		img {
+			width: 24%;
+		}
+	}
+
+	.eniac-women {
+		.bosses {
+			img {
+				width: 20%;
+			}
+		}		
+	}
+
+	blockquote {
+		background: rgba(0,0,0,.5);
+		color: $quoteColor;
+		font-family: Georgia, Times, "Times New Roman", serif;
+	    font-size: 2.5rem;
+	    margin-bottom: 1em;
+	    padding: 0.8em;
+	    @include text-shadow;
+		width: 94%;
+
+		.svg-inline--fa.fa-w-16 {
+		    width: 0.6em;
+		}
+	}
+
+	div.left, div.right {
+		display: inline-block;
+		width: 48%;
+		vertical-align: top;
+	}
+
+	div.right {
+		padding-right: 0.4em;
+	}
+
+	.horizontal-list {
+		width: 100%;
+		
+		li {
+			display: inline-block;
+			width: 32%;
+		}
+	}
+
+	.no-bullets {
+		list-style-type: none;
+	}
+
+	h1 {
+		color: $white;
+		font-family: $headingFontBig;
+		text-shadow: $headingTextShadow;
+	}
+
+	blockquote {
+		width: 80%;
+	}
+
+	.huge {
+		color: $white;
+		font-family: $headingFontBig;
+		font-size: 12rem;
+		line-height: 1.1;
+	}
+
+	.tall-content {
+		max-height: 600px;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+}

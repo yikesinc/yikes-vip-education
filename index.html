@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>YIKES VIP Education</title>
+
+		<meta name="description" content="The slidedeck for the YIKES VIP Education call.">
+		<meta name="author" content="YIKES, Inc.">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/yikes.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- FontAwesome -->
+		<script defer src="js/all.min.js"></script> 
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Big Headline</h1>
+
+					<aside class="notes">
+						The notes are working. 
+					</aside>
+				</section>
+
+				<section>
+					<h1>Thank You</h1>
+
+					<h3>YIKES, Inc. Web Design and Development</h3>
+					<h4>
+						<i class="fab fa-twitter"></i> <a href="https://twitter.com/yikesinc" target="_blank">@yikesinc</a>  &nbsp; &nbsp; &nbsp; 
+						<i class="fab fa-github"></i> <a href="https://github.com/yikesinc" target="_blank">yikesinc</a>
+					</h4>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+				transition: 'fade',
+				transitionSpeed: 'fast',
+				width: 1170,
+				autoPlayMedia: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
