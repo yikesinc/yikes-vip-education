@@ -12,9 +12,8 @@
 
 
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Montserrat:600);
-@import url(https://fonts.googleapis.com/css?family=Oswald:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
 
 // Override theme settings (see template/settings.scss)
@@ -24,10 +23,10 @@ $white: #fff;
 $quoteColor: #8fadd0;
 $success: #2ecc71;
 
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'PT Sans', sans-serif;
 $linkColor: #e7ad52;
 $linkColorHover: lighten( $linkColor, 20% );
-$headingFontBig: Oswald, sans-serif;
+$headingFontBig: Montserrat, sans-serif;
 $headingFont: Montserrat, sans-serif;
 $headingTextShadow:  2px 4px 3px rgba(0,0,0,0.3);
 $headingLetterSpacing: -0.03em;
@@ -81,6 +80,31 @@ $selectionBackgroundColor: #e7ad52;
 
 	.pink {
 		color: $lwtvPink;
+	}
+
+	.max-200 {
+		height: auto;
+		max-width: 200px;
+	}
+
+	.max-300 {
+		height: auto;
+		max-width: 300px;
+	}
+
+	.max-400 {
+		height: auto;
+		max-width: 400px;
+	}
+
+	.max-500 {
+		height: auto;
+		max-width: 500px;
+	}
+
+	.max-600 {
+		height: auto;
+		max-width: 600px;
 	}
 }
 

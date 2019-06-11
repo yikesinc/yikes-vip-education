@@ -3,9 +3,8 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:600);
-@import url(https://fonts.googleapis.com/css?family=Oswald:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 .icon::before {
   display: none;
   font-style: normal;
@@ -29,6 +28,21 @@
   margin-top: 2rem; }
 .reveal .pink {
   color: #d1548e; }
+.reveal .max-200 {
+  height: auto;
+  max-width: 200px; }
+.reveal .max-300 {
+  height: auto;
+  max-width: 300px; }
+.reveal .max-400 {
+  height: auto;
+  max-width: 400px; }
+.reveal .max-500 {
+  height: auto;
+  max-width: 500px; }
+.reveal .max-600 {
+  height: auto;
+  max-width: 600px; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -38,7 +52,7 @@ body {
   background-color: #111; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #eee; }
@@ -325,13 +339,13 @@ body {
   list-style-type: none; }
 .reveal h1 {
   color: #fff;
-  font-family: Oswald, sans-serif;
+  font-family: Montserrat, sans-serif;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
 .reveal blockquote {
   width: 80%; }
 .reveal .huge {
   color: #fff;
-  font-family: Oswald, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 12rem;
   line-height: 1.1; }
 .reveal .tall-content {
@@ -339,4 +353,4 @@ body {
   overflow: hidden;
   overflow-y: scroll; }
 
-/*# sourceMappingURL=wcphilly.css.map */
+/*# sourceMappingURL=yikes.css.map */
