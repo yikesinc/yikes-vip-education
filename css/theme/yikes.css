@@ -43,6 +43,15 @@
 .reveal .max-600 {
   height: auto;
   max-width: 600px; }
+.reveal .max-800 {
+  height: auto;
+  max-width: 800px; }
+.reveal .max-900 {
+  height: auto;
+  max-width: 900px; }
+.reveal .max-1000 {
+  height: auto;
+  max-width: 1000px; }
 
 /*********************************************
  * GLOBAL STYLES
