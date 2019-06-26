@@ -324,13 +324,13 @@ body {
   width: 20%; }
 .reveal blockquote {
   background: rgba(0, 0, 0, 0.5);
-  color: #8fadd0;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 2.5rem;
-  margin-bottom: 1em;
+  color: #fff;
+  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+  font-size: 4rem;
+  margin-bottom: 0;
   padding: 0.8em;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-  width: 94%; }
+  width: 90% !important; }
   .reveal blockquote .svg-inline--fa.fa-w-16 {
     width: 0.6em; }
 .reveal div.left, .reveal div.right {
@@ -350,8 +350,6 @@ body {
   color: #fff;
   font-family: Montserrat, sans-serif;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
-.reveal blockquote {
-  width: 80%; }
 .reveal .huge {
   color: #fff;
   font-family: Montserrat, sans-serif;

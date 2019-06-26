@@ -20,7 +20,7 @@
 $backgroundColor: #111;
 $lwtvPink: #d1548e;
 $white: #fff;
-$quoteColor: #8fadd0;
+$quoteColor: #fff;
 $success: #2ecc71;
 
 $mainFont: 'PT Sans', sans-serif;
@@ -149,12 +149,12 @@ $selectionBackgroundColor: #e7ad52;
 	blockquote {
 		background: rgba(0,0,0,.5);
 		color: $quoteColor;
-		font-family: Georgia, Times, "Times New Roman", serif;
-	    font-size: 2.5rem;
-	    margin-bottom: 1em;
+		font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+	    font-size: 4rem;
+	    margin-bottom: 0;
 	    padding: 0.8em;
 	    @include text-shadow;
-		width: 94%;
+		width: 90% !important;
 
 		.svg-inline--fa.fa-w-16 {
 		    width: 0.6em;
@@ -188,10 +188,6 @@ $selectionBackgroundColor: #e7ad52;
 		color: $white;
 		font-family: $headingFontBig;
 		text-shadow: $headingTextShadow;
-	}
-
-	blockquote {
-		width: 80%;
 	}
 
 	.huge {
